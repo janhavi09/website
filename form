@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>
+Example of submit enabled
+</title>
+<style>
+body{
+	font-family:calibri,helvetica,sans-serif;
+	background-color:pink;
+}
+.container{
+	padding:50px;
+	background-color:lightblue;
+}
+input[type=text]{
+	width:100%;
+	padding:15px;
+	margin:5px 0 22px 0;
+	display: inline-block;
+	border:none;
+	background: #f1f1f1;
+}
+input[type=text]:focus{
+	background-color: orange;
+	outline:none;
+}
+div{
+	padding:10px 0;
+}
+button{
+	color:red;
+	padding:16px 20px;
+	margin:8px 0;
+	border:none;
+	cursor: pointer;
+	width: 100%;
+opacity: 0.9;
+}
+</style>
+</head>
+<body>
+<form>
+	<div class="container">
+		<center>
+			<h1>Registration Form</h1>
+		</center>
+		<label>Firstname:</label>
+		<input type="text" name="Firstname" placeholder="Enter your Firstname" size="15"required/>
+		<label>Middlename:</label>
+		<input type="text" name="Middlename" placeholder="Enter your Middlename" size="15"/>
+		<label>Lastname</label>
+		<input type="text" name="Lastname" placeholder="Enter your Lastname" size="15" required/>
+		<div>
+		<label>
+		Gender:
+	</label><br>
+	<input type="radio" value="Male" name="Gender" checked>Male
+	<input type="radio" value="Female" name="Gender">Female
+	<input type="radio" value="Other" name="Gender">Other
+</div>
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter your Email ID" name="email"required>
+<button type="submit" value="submit" enabled>Submit Form</button>
+</form>
+</body>
+</html>
